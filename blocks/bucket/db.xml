@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btCircBucket">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+        <field name="css_id" type="C" size="255" />
+        <field name="heading" type="C" size="255" />
+        <field name="copy" type="X2" />
+        <field name="image_id" type="I">
+            <unsigned/>
+        </field>
+        <field name="copy_width" type="I">
+            <unsigned/>
+        </field>
+        <field name="copy_top" type="I"/>
+        <field name="copy_bottom" type="I"/>
+        <field name="copy_left" type="I"/>
+        <field name="copy_right" type="I"/>
+	</table>
+</schema>
