@@ -7,7 +7,7 @@ class CircStandardPackage extends Package
 
     protected $pkgHandle = 'circ_standard';
     protected $appVersionRequired = '5.5.2.1';
-    protected $pkgVersion = '0.00.06';
+    protected $pkgVersion = '0.01';
     private $pageTypes = array();
     private $attributeTypes = array();
 
@@ -126,6 +126,7 @@ class CircStandardPackage extends Package
     private function installBlockTypes()
     {
         $this->createBlockType('bucket');
+        $this->createBlockType('button');
         return $this;
     }
 
