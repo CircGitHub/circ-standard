@@ -6,6 +6,7 @@
 			<unsigned />
 		</field>
         <field name="css_id" type="C" size="255" />
+        <field name="css_class" type="C" size="255" />
         <field name="heading" type="C" size="255" />
         <field name="copy" type="X2" />
         <field name="image_id" type="I">

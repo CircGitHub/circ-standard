@@ -7,7 +7,7 @@ class CircStandardPackage extends Package
 
     protected $pkgHandle = 'circ_standard';
     protected $appVersionRequired = '5.5.2.1';
-    protected $pkgVersion = '0.01';
+    protected $pkgVersion = '0.02';
     private $pageTypes = array();
     private $attributeTypes = array();
 

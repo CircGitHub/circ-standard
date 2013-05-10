@@ -30,8 +30,8 @@ class BucketBlockController extends BlockController {
             throw new Exception('Only a top or bottom css style is allowed, not both.');
         }
 
-        if(preg_match('/[^a-zA-Z0-9_-]/', $args['css_id'])) {
-            throw new Exception('The CSS ID can only contain numbers, letters, dashes and underscores.');
+        if(preg_match('/[^a-zA-Z0-9_-]/', $args['css_id']) || preg_match('/[^ a-zA-Z0-9_-]/', $args['css_class'])) {
+            throw new Exception('The CSS ID and Class can only contain numbers, letters, dashes and underscores. Classes can also contain spaces.');
         }
 
 
@@ -98,6 +98,7 @@ class BucketBlockController extends BlockController {
 
         $this->set('heading', $this->record->heading);
         $this->set('cssId', !empty($this->record->css_id) ? $this->record->css_id : 'bucket_' . $this->record->bID);
+        $this->set('cssClass', !empty($this->record->css_class) ? 'circ_standard_bucket ' . $this->record->css_class : 'circ_standard_bucket');
         $this->set('containerStyle', $containerStyle);
         $this->set('copyStyle', $copyStyle);
         $this->set('copy', $this->record->copy);

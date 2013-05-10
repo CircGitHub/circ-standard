@@ -11,6 +11,8 @@ Loader::element('editor_config');
     <div class="ccm-block-field-group">
         <h2>CSS ID</h2>
         <?php echo $form->text('css_id', $css_id, array('style' => 'width: 95%;')); ?>
+        <h2>CSS Class</h2>
+        <?php echo $form->text('css_class', $css_class, array('style' => 'width: 95%;')); ?>
         <h2>Heading</h2>
         <?php echo $form->text('heading', $heading, array('style' => 'width: 95%;')); ?>
 
